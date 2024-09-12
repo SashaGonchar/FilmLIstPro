@@ -69,7 +69,7 @@ body{
     margin-top:20px;
 }
 
-.add-film{
+.add-film-btn{
     background: inherit;
     border-style: dashed;
     border-radius: 10px;
@@ -78,23 +78,28 @@ body{
     margin: 20px 40px;
 }
 
-.add-film span{
+.add-film-btn span{
     font-size: 48px;
 }
 
-.add-film-modal{
+.modal{
     display: block;
+}
+
+.modal__window{
     position: absolute;
     top: calc(50% - 300px);
     left: calc(50% - 400px);
     width: 800px;
     height: 600px;
-    background: pink;
+    background: rgb(255, 192, 203);
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
 }
 
-.modal-background{
-    display: block;
+.modal__background{
     position: absolute;
     top: 0;
     left: 0;
@@ -102,4 +107,34 @@ body{
     width: 100%;
     z-index: 1;
     background: rgba(137, 137, 137, 0.75 );
+}
+
+.modal__title{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.modal__window input[type=text]{
+    background: white;
+    height: 40px;
+    width: 650px;
+    margin: 15px 60px;
+    border: 1px solid black;
+    border-radius:25px;
+    padding-left: 25px;
+    cursor: text;
+}
+
+.modal__input:focus{
+    background: rgba(255, 192, 203, 0.5);
+    outline: unset;
+}
+
+.modal__input:hover{
+    background: rgba(255, 192, 203, 0.5);
+}
+
+
+ {
+
 }
