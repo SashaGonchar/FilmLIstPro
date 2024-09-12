@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FilmListPro</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
@@ -34,11 +35,21 @@
             </div>
         </div>
 
-        <button class="add-film"><span>+</span></button>
+        <button class="add-film-btn"><span>+</span></button>
     </div>
 </div>
-<div class="modal-background"></div>
-<div class="add-film-modal"></div>
 
+<div class="modal">
+<div class="modal__background"></div>
+<div class="modal__window">
+    <p class="modal__title"><span class="text big bold">Add Film</span></p>
+    <label for="name"><input class="modal__input" id="name" type="text" autocomplete="off" placeholder="Please, enter the name of the film"></label>
+    <label for="genre"><input class="modal__input" id="genre" type="text" autocomplete="off" placeholder="Please, enter the genre of the film"></label>
+    <label for="director"><input class="modal__input" id="director" type="text" autocomplete="off" placeholder="Please, enter the director of the film"></label>
+    <label for="description"><input class="modal__input" id="description" type="text" autocomplete="off" placeholder="Please, enter a short description of the film"></label>
+    <label for="comment"><input class="modal__input" id="comment" type="text" autocomplete="off" placeholder="Please, enter the your own comment for the film"></label>
+    <label for="img-upload"><input type="file" id="img-upload" accept=".jpg .png .svg" autocomplete="off"></label>
+</div>
+</div>
 </body>
 </html>
