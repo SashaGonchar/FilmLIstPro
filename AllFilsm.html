@@ -10,14 +10,14 @@
 <body>
 
 <div class="navbar">
-    <div class="two-part-horizontal__container">
-        <p class="text bold big">FilmLIstPro</p>                                                                    <!лого--->
+    <div class="horizontal-container">
+        <p class="text text--bold text--big">FilmLIstPro</p>                                                                    <!лого--->
         <p class="text">All Films</p>                                                                               <!несортерованные фильмы с возможностью добавить фильм вручную--->
         <p class="text">My Collections</p>                                                                          <!отображение списков фильмов в созможностью сверуть и развернуть их и перетянуть в коллекцию фильма с уже добавленных несортированых или же добавить сразу в коллекцию --->
         <p class="text">Add from IMDB</p>                                                                           <!API с IMDB где я их отображаю в формате плиток таких же с сайта с возможностью добавить их в коллекцию или несортерованные--->
         <p class="text">Add from Friends</p>                                                                        <!просмотр коллекций от уже добавленных друзей--->
     </div>
-    <div class="two-part-horizontal__container">
+    <div class="horizontal-container">
         <p class="text">Profile</p>                                                                                 <!Добавление информации про себя--->
         <p class="text">Friends</p>                                                                                 <!Поиск друзей и добавление их--->
     </div>
@@ -27,10 +27,10 @@
     <div class="content">
 
         <div class="title">
-            <div class="two-part-horizontal__container">
-                <p class="text bold">All Films</p>
+            <div class="horizontal-container">
+                <p class="text text--bold">All Films</p>
             </div>
-            <div class="two-part-horizontal__container">
+            <div class="horizontal-container">
                 <p class="text">Filter</p>
             </div>
         </div>
@@ -42,13 +42,41 @@
 <div class="modal">
 <div class="modal__background"></div>
 <div class="modal__window">
-    <p class="modal__title"><span class="text big bold">Add Film</span></p>
-    <label for="name"><input class="modal__input" id="name" type="text" autocomplete="off" placeholder="Please, enter the name of the film"></label>
-    <label for="genre"><input class="modal__input" id="genre" type="text" autocomplete="off" placeholder="Please, enter the genre of the film"></label>
-    <label for="director"><input class="modal__input" id="director" type="text" autocomplete="off" placeholder="Please, enter the director of the film"></label>
-    <label for="description"><input class="modal__input" id="description" type="text" autocomplete="off" placeholder="Please, enter a short description of the film"></label>
-    <label for="comment"><input class="modal__input" id="comment" type="text" autocomplete="off" placeholder="Please, enter the your own comment for the film"></label>
-    <label for="img-upload"><input type="file" id="img-upload" accept=".jpg .png .svg" autocomplete="off"></label>
+    <p class="modal__title"><span class="text text--big text--bold">Add Film</span></p>
+    <div class="modal__input">
+        <label for="name" class="text">Name:</label>
+        <input id="name" type="text" autocomplete="off" placeholder="Please, enter the name of the film">
+    </div>
+    <div class="modal__input">
+        <label for="genre" class="text">Genre:</label>
+        <input id="genre" type="text" autocomplete="off" placeholder="Please, enter the genre of the film">
+    </div>
+    <div class="modal__input">
+        <label for="director" class="text">Director:</label>
+        <input id="director" type="text" autocomplete="off" placeholder="Please, enter the director of the film">
+    </div>
+    <div class="modal__input">
+        <label for="description" class="text">Description:</label>
+        <input id="description" type="text" autocomplete="off" placeholder="Please, enter a short description of the film">
+    </div>
+    <div class="modal__input">
+        <label for="comment" class="text">Comment:</label>
+        <input id="comment" type="text" autocomplete="off" placeholder="Please, enter the your own comment for the film">
+    </div>
+
+    <input type="file" id="img-upload" accept=".jpg .png .svg">
+    <div class="file-add">
+        <div class="horizontal-container">
+            <div class="file-add__choose">
+                <span>Choose img from your computer</span>
+            </div>
+        <div class="horizontal-container">
+            <div class="file-add__drug-and-drop">
+                <span>Drag and drop img</span>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 </div>
 </body>

@@ -27,17 +27,17 @@ body{
     position: absolute;
 }
 
-.two-part-horizontal__container {
+.horizontal-container {
     flex-grow: 1;
     display: flex;
     align-items: center;
 }
 
-.two-part-horizontal__container *{
+.horizontal-container *{
     margin: 0 2vw;
 }
 
-.two-part-horizontal__container:nth-child(2){
+.horizontal-container:nth-child(2){
     flex-direction: row-reverse;
 }
 
@@ -47,11 +47,11 @@ body{
     font-size: 18px;
 }
 
-.bold{
+.text--bold{
     font-weight: bold;
 }
 
-.big{
+.text--big{
     font-size: 22px;
 }
 
@@ -71,7 +71,7 @@ body{
 
 .add-film-btn{
     background: inherit;
-    border-style: dashed;
+    border: 2px dashed black;
     border-radius: 10px;
     height:350px;
     width: 250px;
@@ -117,24 +117,74 @@ body{
 .modal__window input[type=text]{
     background: white;
     height: 40px;
-    width: 650px;
-    margin: 15px 60px;
+    flex-grow: 1;
+    margin: 10px 10px 10px 0;
     border: 1px solid black;
     border-radius:25px;
     padding-left: 25px;
     cursor: text;
 }
 
-.modal__input:focus{
+.modal__window input[type=text]:focus{
     background: rgba(255, 192, 203, 0.5);
     outline: unset;
 }
 
-.modal__input:hover{
+.modal__window input[type=text]:hover{
     background: rgba(255, 192, 203, 0.5);
 }
 
+.modal__input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
- {
+.modal__input label{
+    display: block;
+    margin: 0 20px;
+}
 
+.modal__window input[type=file]{
+    display: none;
+}
+
+.file-add{
+    width: 800px;
+}
+
+.file-add .horizontal-container{
+    margin: 0;
+}
+
+.file-add__choose{
+    height: 200px;
+    width: 200px;
+    border: 2px dashed black;
+    border-radius: 10px;
+    background: inherit;
+    margin: 15px 0 0 15px ;
+    display: flex;
+    justify-content: center;
+}
+
+.file-add__choose span{
+    align-self: center;
+    text-align: center;
+}
+
+.file-add__drug-and-drop{
+    height: 200px;
+    width: 550px;
+    border: 2px dashed black;
+    border-radius: 10px;
+    background: inherit;
+    margin: 15px 15px 0 0 ;
+    display: flex;
+    justify-content: center;
+}
+
+.file-add__drug-and-drop span{
+    align-self: center;
+    text-align: center;
 }
