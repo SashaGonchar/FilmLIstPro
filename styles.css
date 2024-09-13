@@ -55,6 +55,10 @@ body{
     font-size: 22px;
 }
 
+.text--smoky{
+    color: rgba(0, 0, 0, 0.5);
+}
+
 .content{
     background: #f3faff;
     margin: 100px 0 80px 0;
@@ -88,10 +92,10 @@ body{
 
 .modal__window{
     position: absolute;
-    top: calc(50% - 300px);
+    top: calc(50% - 325px);
     left: calc(50% - 400px);
     width: 800px;
-    height: 600px;
+    height: 650px;
     background: rgb(255, 192, 203);
     z-index: 2;
     display: flex;
@@ -132,6 +136,7 @@ body{
 
 .modal__window input[type=text]:hover{
     background: rgba(255, 192, 203, 0.5);
+    transition: 0.3s;
 }
 
 .modal__input{
@@ -173,6 +178,14 @@ body{
     text-align: center;
 }
 
+.file-add__choose:hover{
+    height: 198px;
+    width: 198px;
+    transition: 0.4s;
+    margin: 16px 0 0 16px;
+    cursor: pointer;
+}
+
 .file-add__drug-and-drop{
     height: 200px;
     width: 550px;
@@ -187,4 +200,29 @@ body{
 .file-add__drug-and-drop span{
     align-self: center;
     text-align: center;
+}
+
+.action-field{
+    max-width: 800px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.action-field__btn{
+    height: 30px;
+    width: 80px;
+    border-radius: 25px;
+    border: 1px solid black;
+    background: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.action-field__btn:hover{
+    cursor: pointer;
+}
+
+.action-field__btn:active{
+    height: 28px;
+    width: 78px;
 }
