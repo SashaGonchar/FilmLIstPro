@@ -28,7 +28,7 @@ body{
 }
 
 .horizontal-container {
-    flex-grow: 1;
+    flex: 1 1 auto;
     display: flex;
     align-items: center;
 }
@@ -106,7 +106,8 @@ body{
     top: calc(50% - 325px);
     left: calc(50% - 400px);
     width: 800px;
-    height: 650px;
+    min-height: 650px;
+    max-height: 700px;
     background: rgb(255, 192, 203);
     z-index: 2;
     display: flex;
@@ -169,6 +170,11 @@ body{
     width: 800px;
 }
 
+.file-add__container{
+    display: flex;
+}
+
+
 .file-add .horizontal-container{
     margin: 0;
 }
@@ -216,7 +222,7 @@ body{
 .action-field{
     max-width: 800px;
     display: flex;
-    margin-top: 20px;
+    margin: 15px 0;
 }
 
 .action-field__btn{
