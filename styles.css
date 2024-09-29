@@ -256,3 +256,10 @@ body{
     height:40px;
     margin: 10px 15px 0 15px;
 }
+
+.photo-preview__name{
+    margin: 10px 15px 0 5px;
+}
+
+
+
