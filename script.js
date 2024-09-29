@@ -60,21 +60,41 @@ document.addEventListener("DOMContentLoaded", function (node, child) {
             return (inputField.value);
     }
 
+    console.log(getInputData())
     /*возвращает URL фото загруженного в input type=file*/
         function getInputImgSrc (fileInputId){
             const inputImgField = document.querySelector(fileInputId).files[0];
             return (window.URL.createObjectURL(inputImgField));
         }
 
-    /*создать класс ПЛитка который будет принимать дефолтные значения с модалки и у нее будет функция создания плитки функция получения данных с плитки для редактирования и метод очищения модального окна*/
+    /*создать класс Плитка который будет принимать дефолтные значения с модалки и у нее будет функция создания плитки функция получения данных с плитки для редактирования и метод очищения модального окна*/
 
-    /*function inputDataToObject () {
-        let name = getInputData("#name");
-        let genre = getInputData("#genre");
-        let director = getInputData("#director");
-        let description = getInputData("#description");
-        let comment = getInputData("#comment");
-        let photo = getInputImgSrc("#img-upload")
+    class Tile {
+        constructor (name = getInputData("#name"),
+                    genre = getInputData("#genre"),
+                    director = getInputData("#director"),
+                    description = getInputData("#description"),
+                    comment = getInputData("#comment"),
+                    imgUpload = getInputImgSrc("#img-upload")) {
+            this.name = name;
+            this.genre = genre;
+            this.director = director;
+            this.description = description;
+            this.comment = comment;
+            this.imgUpload = imgUpload;
+        }
 
-    }*/
+        /* добавлю слушатель на кнопку сохранения и буду вызывать этот метод по нажатию */
+        createTitle() {
+
+        }
+        updateTitle(){
+
+        }
+
+        removeTitle(){
+
+        }
+    }
+
 })
