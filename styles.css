@@ -61,6 +61,10 @@ body{
     color: rgba(0, 0, 0, 0.5);
 }
 
+.text--small{
+    font-size: 14px;
+}
+
 .content{
     background: #f3faff;
     margin: 100px 0 80px 0;
@@ -68,6 +72,8 @@ body{
     min-height: calc(100vh - 180px);
     border-radius: 25px;
     height: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 .title{
@@ -82,6 +88,7 @@ body{
     height:350px;
     width: 250px;
     margin: 20px 40px;
+    flex:0 0 auto;
 }
 
 .add-film-btn:hover{
@@ -96,6 +103,45 @@ body{
 .add-film-btn span{
     font-size: 48px;
 }
+
+.tile__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 100%;
+    height: 100%;
+
+}
+
+.tile{
+    flex:0 0 auto;
+    border-radius: 10px;
+    height:350px;
+    width: 250px;
+    margin: 20px 0 0 40px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.tile__film-img{
+    height: 100px;
+    width: 250px;
+    border-radius: 10px 10px 0 0;
+}
+
+.tile__film-attributes{
+    margin: 5px 10px 0 10px;
+    max-height: 35px;
+    overflow: hidden;
+}
+.tile__action-field{
+    height: 40px;
+    width: 100%;
+}
+
 
 .modal{
     display: none;
