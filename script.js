@@ -85,14 +85,14 @@ document.addEventListener("DOMContentLoaded", function (node, child) {
         }
 
         /* добавлю слушатель на кнопку сохранения и буду вызывать этот метод по нажатию */
-        createTitle() {
+        createTile() {
 
         }
-        updateTitle(){
+        updateTile(){
 
         }
 
-        removeTitle(){
+        removeTile(){
 
         }
     }
